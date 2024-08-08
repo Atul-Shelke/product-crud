@@ -1,0 +1,6 @@
+
+<input type="text" [(ngModel)]="inputValue"> <button type="submit" (click)="onSubmit()">Submit</button>
+
+<h1>{{childData.name}}</h1>
+
+<app-grand-child (notifyParent)="handlenotification($event)"></app-grand-child>

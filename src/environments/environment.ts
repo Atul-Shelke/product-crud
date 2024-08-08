@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  DEV:{
+      BASE_URL:'https://api.escuelajs.co/api/v1'
+  }
 };
 
 /*

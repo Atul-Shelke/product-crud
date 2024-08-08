@@ -1,0 +1,41 @@
+.newSceheme{
+  font-size: 20px;
+  font-weight: 500;
+}
+input{
+    border-radius: 8px;
+    width:340px;
+    height: 40px;
+
+}
+
+label {
+    display: block; /* Make the label a block element */
+    margin-bottom: 5px;
+  /* Space between label and input */
+  }
+.secondary{
+    color: red;
+}
+nz-select{
+    border-radius: 8px;
+    width:340px;
+    height: 40px;
+
+}
+.table-header th {
+    background-color: #093545 !important; /* Keep the background color black on hover */
+    color: white !important; 
+    height: 10px; 
+          /* Keep the text color white on hover */
+  }
+
+nz-table th,
+nz-table td {
+  border: none !important; /* Remove border from header and data cells */
+
+}
+nz-table td:hover {
+    background-color: transparent !important; /* Ensure no background color on hover */
+  }
+  

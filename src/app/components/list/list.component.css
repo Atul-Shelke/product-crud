@@ -1,0 +1,13 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 100px 100px;
+    gap: 10px; /* Optional: adds space between grid items */
+}
+.grid-item {
+    background-color: lightblue;
+    border: 1px solid blue;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}

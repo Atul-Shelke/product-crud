@@ -1,0 +1,62 @@
+<div class="mt-2 p-4 bg-secondary text-white rounded text-center">
+  <h1>{{isEdit ?'Upadte Data':'Add Data'}}</h1>
+</div>
+
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">UserName</th>
+        <th scope="col">Email</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of userList">
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.name}}</td>
+        <td>{{item.username}}</td>
+        <td>{{item.email}}</td>
+        <td><button class="btn btn-success" (click)="onEdit(item.id)">Edit</button></td>
+        <td><button class="btn btn-danger" (click)="deleteData(item.id)">Delete</button></td>
+      </tr>
+     
+    </tbody>
+  </table>
+</div>
+  <div class="container">
+    <form [formGroup]="formData">
+      <div class="row">
+        <div class="col-4">
+          <label >Name</label>
+          <input type="text" class="form-control" formControlName="name">
+
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <label >UserName</label>
+          <input type="text" class="form-control" formControlName="username">
+
+        </div>
+        <div class="row">
+        <div class="col-4">
+          <label >Email</label>
+          <input type="email" class="form-control" formControlName="email">
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-6">
+            <button class="btn btn-success" (click)="onSaveUser()">Save User</button>
+        </div>
+
+      </div>
+    </form>
+
+  </div>
+
